@@ -210,7 +210,7 @@ footer .links {
   header h1 {
     transform: translateX(0);
     left: 80%;
-    top: 5%;
+    bottom: 78%;
     text-wrap: nowrap;
   }
 
@@ -220,6 +220,10 @@ footer .links {
 
   section h2 {
     justify-content: start;
+  }
+
+  section {
+    padding: 0 3rem;
   }
 
   .projects {
@@ -256,4 +260,54 @@ footer .links {
 }
 
 @media (min-width: 1000px) {
+  header h2 {
+    justify-content: start;
+    margin-top: 0;
+    padding-bottom: 0.5rem;
+  }
+
+  header > div {
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+  }
+
+  .photo img {
+    height: 350px;
+  }
+
+  header .links {
+    display: flex;
+    margin: 0;
+    justify-content: end;
+    margin-top: 3rem;
+  }
+
+  header h1 {
+    left: 50%;
+    bottom: 2%;
+    transform: translateX(-50%);
+    text-wrap: wrap;
+  }
+
+  .photo {
+    margin-top: -5rem;
+  }
+
+  section h2 {
+    margin-top: 4rem;
+  }
+
+  .projects {
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+  }
+
+  footer img {
+    height: 500px;
+    width: 100%;
+  }
+
+  footer {
+    grid-template-columns: 1fr 1.5fr;
+  }
 }
